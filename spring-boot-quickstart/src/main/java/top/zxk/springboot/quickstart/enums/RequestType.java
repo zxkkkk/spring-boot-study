@@ -1,4 +1,7 @@
 package top.zxk.springboot.quickstart.enums;
 
-public class RequestType {
+public enum RequestType {
+    QUERY,
+    COMPLAINT,
+    SUGGESTION
 }
