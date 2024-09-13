@@ -1,0 +1,12 @@
+##logging:
+##  level:
+##    root: info
+##    top.zxk.springboot.thymeleaf: debug
+##
+##spring:
+##  thymeleaf:
+##    cache: false
+#logging:
+#  file:
+#    path:./logs
+#    name: my-log.log
