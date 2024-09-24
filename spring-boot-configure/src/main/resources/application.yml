@@ -1,0 +1,64 @@
+server:
+  host: "localhost"
+  port: 8080
+  context-path: "/api"
+
+family:
+  family-name: "happy"
+  father: ${father.name:zhangsan}
+  mother: "Rose"
+  child: "Tom"
+  age: ${random.int(4,30)}
+father:
+  name: "Lily"
+
+person:
+  first-name: ${first.name:John}
+  last-name: ${last.name:Doe}
+  age: ${random.int(20,50)}
+  id: ${random.uuid}
+  phone: ${phone.number:1234567890}
+first-name:
+  name: "zxk"
+last-name:
+  name: "shy"
+phone:
+  number: "6666666666"
+
+student:
+  name: 张小飞
+  age: 20
+  happy: true
+  bitrh: 2004/01/01
+  map: {k1: v1, k2: v2}
+  list:
+    - code
+    - read
+    - music
+  dog:
+    name: 虎子
+    age: 11
+
+
+#db:
+#  url: jdbc:mysql://127.0.0.1:3306/spring_boot?useUnicode=true&characterEncoding=utf-8&useSSL-false&allowMultiQueries=true
+#  username: root
+#  password: 20040502
+#  driver-class-name: com.mysql.cj.jdbc.Driver
+
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 858654746@qq.com
+    password: syhocidlwdgsbbci
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+  main:
+    allow-bean-definition-overriding=true:
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: 20040502
+    driver-class-name: com.mysql.cj.jdbc.Driver

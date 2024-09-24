@@ -3,7 +3,7 @@ package top.zxk.springboot.thymeleaf.model;
 public class User {
     private Long id;
     private String name;
-    private String email;  // 新增字段
+    private String email;
 
     public User(Long id, String name, String email) {  // 更新构造函数
         this.id = id;

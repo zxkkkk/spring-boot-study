@@ -17,6 +17,8 @@
         <module>spring-boot-quickstart</module>
         <module>spring-boot-thymeleaf</module>
         <module>spring-boot-logging</module>
+        <module>my-zhihu-api</module>
+        <module>spring-boot-configure</module>
     </modules>
     <packaging>pom</packaging>
 
