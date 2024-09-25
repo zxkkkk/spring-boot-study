@@ -13,7 +13,7 @@ import top.zxk.springboot.configure.service.EmailService;
 public class EmailController {
     private final EmailService emailService;
 
-    @PostMapping("/mail")
+    @PostMapping("/api/mail")
     public void sendMail(@RequestBody Mail mail){
         emailService.sendSimpleMail(mail.getTo(), mail.getSubject(), mail.getBody());
     }

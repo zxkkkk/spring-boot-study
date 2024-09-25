@@ -9,6 +9,7 @@ family:
   mother: "Rose"
   child: "Tom"
   age: ${random.int(4,30)}
+
 father:
   name: "Lily"
 
@@ -18,10 +19,13 @@ person:
   age: ${random.int(20,50)}
   id: ${random.uuid}
   phone: ${phone.number:1234567890}
+
 first-name:
   name: "zxk"
+
 last-name:
   name: "shy"
+
 phone:
   number: "6666666666"
 
@@ -29,7 +33,7 @@ student:
   name: 张小飞
   age: 20
   happy: true
-  bitrh: 2004/01/01
+  birth: 2004/01/01
   map: {k1: v1, k2: v2}
   list:
     - code
@@ -39,12 +43,11 @@ student:
     name: 虎子
     age: 11
 
-
-#db:
-#  url: jdbc:mysql://127.0.0.1:3306/spring_boot?useUnicode=true&characterEncoding=utf-8&useSSL-false&allowMultiQueries=true
-#  username: root
-#  password: 20040502
-#  driver-class-name: com.mysql.cj.jdbc.Driver
+db:
+  url: jdbc:mysql://127.0.0.1:3306/spring_boot?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+  username: root
+  password: 20040502
+  driver-class-name: com.mysql.cj.jdbc.Driver
 
 spring:
   mail:
@@ -54,11 +57,41 @@ spring:
     properties:
       mail.smtp.auth: true
       mail.smtp.starttls.enable: true
+
   main:
-    allow-bean-definition-overriding=true:
+    allow-bean-definition-overriding: true
+
+  web:
+    resources:
+      static-locations: classpath:/static/,file:${file.upload-path}
+    servlet:
+    multipart:
+      max-file-size: 10485760  # 上传文件大小限定为10M
+      max-request-size: 10485760
 
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/spring_boot?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
     username: root
     password: 20040502
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+jwt:
+  secret: helloworld
+  expiration: 3600000
+
+custom:
+  qrcode:
+    content: "https://www.baidu.com"
+  log:
+    level: "INFO"
+  backup:
+    location: D:/Backup/Desktop/backup.log
+
+aliyun:
+  oss:
+#    endpoint: http://oss-cn-nanjing.aliyuncs.com
+#    accessKeyId: 123
+#    accessKeySecret: 123
+#    bucketName: zxkkk-bucket
+
+

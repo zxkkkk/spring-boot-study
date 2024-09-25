@@ -1,6 +1,5 @@
 package top.zxk.springboot.configure.entity;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -8,11 +8,12 @@
         <version>3.3.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>top.zxk</groupId>
     <artifactId>spring-boot-pratice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot-pratice</name>
-    <description>spring-boot-pratice</description>
+    <name>spring-boot-practice</name>
+    <description>spring-boot-practice</description>
     <modules>
         <module>spring-boot-quickstart</module>
         <module>spring-boot-thymeleaf</module>
