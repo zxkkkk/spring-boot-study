@@ -89,9 +89,9 @@ custom:
 
 aliyun:
   oss:
-#    endpoint: http://oss-cn-nanjing.aliyuncs.com
-#    accessKeyId: 123
-#    accessKeySecret: 123
-#    bucketName: zxkkk-bucket
+    endpoint: http://oss-cn-nanjing.aliyuncs.com
+#    accessKeyId: LTAI5t9LmP93N11YBvDU1Rai
+#    accessKeySecret: 3fCLBiBu8xT8iZTGaUp8szHUWbcgqi
+    bucketName: zxkkk-bucket
 
 
