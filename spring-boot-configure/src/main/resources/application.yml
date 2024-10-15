@@ -87,11 +87,11 @@ custom:
   backup:
     location: D:/Backup/Desktop/backup.log
 
-aliyun:
-  oss:
-    endpoint: http://oss-cn-nanjing.aliyuncs.com
-    # accessKeyId: YOUR_ACCESS_KEY_ID
-    # accessKeySecret: YOUR_ACCESS_KEY_SECRET
-    bucketName: zxkkk-bucket
+#aliyun:
+#  oss:
+#    endpoint: http://oss-cn-nanjing.aliyuncs.com
+#     accessKeyId: 123
+#     accessKeySecret: 123
+#    bucketName: zxkkk-bucket
 
 
