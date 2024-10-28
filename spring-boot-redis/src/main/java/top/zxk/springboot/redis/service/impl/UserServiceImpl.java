@@ -52,7 +52,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             user = new User();
             user.setNickname(phone);
             user.setPhone(phone);
-            user.setAvatar("https://niit-soft.oss-cn-hangzhou.aliyuncs.com/avatar/me.png");
+            user.setAvatar("https://tse4-mm.cn.bing.net/th/id/OIP-C.7GLMYPqMlt2LgkbPsOnDIAAAAA?rs=1&pid=ImgDetMain");
             user.setGender(0);
             user.setEnabled(AccountStatusEnum.ENABLED.getValue());
             user.setBonus(100);

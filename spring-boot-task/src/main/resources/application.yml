@@ -1,0 +1,34 @@
+# 数据源配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 20040502
+  mail:
+    host: smtp.qq.com
+    username: 858654746@qq.com
+    password: syhocidlwdgsbbci
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: always
+  main:
+    allow-bean-definition-overriding: true
+
+
+
+
+# 配置 MP 框架⽇志级别
+logging:
+  level:
+    com.baomidou.mybatisplus.samples: debug
+
+# MP 配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 驼峰下划线转换
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试⽤

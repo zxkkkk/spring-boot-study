@@ -8,3 +8,4 @@
 - spring-boot-mp：MyBatis Plus模块
 - spring-boot-exception: 数据异常模块
 - spring-boot-redis:redis模块
+- spring-boot-task: task模块
