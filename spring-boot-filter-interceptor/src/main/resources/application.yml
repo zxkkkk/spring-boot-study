@@ -1,0 +1,12 @@
+logging:
+  level:
+    root: INFO
+  pattern:
+    console: "%d{HH:mm:ss} - %msg%n"
+
+aliyun:
+  oss:
+    endpoint: oss-cn-nanjing.aliyuncs.com
+    accessKeyId: 123
+    accessKeySecret: 123
+    bucketName: zxkkk-bucket
